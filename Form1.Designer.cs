@@ -1,7 +1,7 @@
 ﻿
 namespace cashUpCalculator
 {
-    partial class Form1
+    partial class entryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,58 @@ namespace cashUpCalculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.cashUp = new System.Windows.Forms.Button();
+            this.History = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // cashUp
+            // 
+            this.cashUp.Location = new System.Drawing.Point(40, 34);
+            this.cashUp.Name = "cashUp";
+            this.cashUp.Size = new System.Drawing.Size(199, 78);
+            this.cashUp.TabIndex = 0;
+            this.cashUp.Text = "Cash Up";
+            this.cashUp.UseVisualStyleBackColor = true;
+            this.cashUp.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // History
+            // 
+            this.History.Location = new System.Drawing.Point(40, 118);
+            this.History.Name = "History";
+            this.History.Size = new System.Drawing.Size(199, 78);
+            this.History.TabIndex = 1;
+            this.History.Text = "View History";
+            this.History.UseVisualStyleBackColor = true;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(40, 202);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(199, 78);
+            this.exitButton.TabIndex = 2;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 
+            // entryForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(276, 312);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.History);
+            this.Controls.Add(this.cashUp);
+            this.Name = "entryForm";
+            this.Text = "Easy Cash Up";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button cashUp;
+        private System.Windows.Forms.Button History;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
