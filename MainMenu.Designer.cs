@@ -1,7 +1,7 @@
 ﻿
 namespace cashUpCalculator
 {
-    partial class entryForm
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -29,58 +29,57 @@ namespace cashUpCalculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.cashUp = new System.Windows.Forms.Button();
-            this.History = new System.Windows.Forms.Button();
+            this.startCashUpbutton = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // cashUp
+            // startCashUpbutton
             // 
-            this.cashUp.Location = new System.Drawing.Point(40, 34);
-            this.cashUp.Name = "cashUp";
-            this.cashUp.Size = new System.Drawing.Size(199, 78);
-            this.cashUp.TabIndex = 0;
-            this.cashUp.Text = "Cash Up";
-            this.cashUp.UseVisualStyleBackColor = true;
-            this.cashUp.Click += new System.EventHandler(this.button1_Click);
+            this.startCashUpbutton.Location = new System.Drawing.Point(83, 69);
+            this.startCashUpbutton.Name = "startCashUpbutton";
+            this.startCashUpbutton.Size = new System.Drawing.Size(153, 48);
+            this.startCashUpbutton.TabIndex = 0;
+            this.startCashUpbutton.Text = "Start Cash-Up";
+            this.startCashUpbutton.UseVisualStyleBackColor = true;
             // 
-            // History
+            // button2
             // 
-            this.History.Location = new System.Drawing.Point(40, 118);
-            this.History.Name = "History";
-            this.History.Size = new System.Drawing.Size(199, 78);
-            this.History.TabIndex = 1;
-            this.History.Text = "View History";
-            this.History.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(83, 123);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(153, 47);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(40, 202);
+            this.exitButton.Location = new System.Drawing.Point(83, 176);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(199, 78);
-            this.exitButton.TabIndex = 2;
+            this.exitButton.Size = new System.Drawing.Size(153, 46);
+            this.exitButton.TabIndex = 3;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
             // 
-            // entryForm
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 312);
+            this.ClientSize = new System.Drawing.Size(330, 345);
             this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.History);
-            this.Controls.Add(this.cashUp);
-            this.Name = "entryForm";
-            this.Text = "Easy Cash Up";
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.startCashUpbutton);
+            this.Name = "MainMenu";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button cashUp;
-        private System.Windows.Forms.Button History;
+        private System.Windows.Forms.Button startCashUpbutton;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button exitButton;
     }
 }
-

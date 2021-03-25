@@ -16,7 +16,7 @@ namespace cashUpCalculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new entryForm());
+            Application.Run(new System.Windows.Forms.MainMenu());
         }
     }
 }

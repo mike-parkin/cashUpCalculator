@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace cashUpCalculator
 {
-    public partial class entryForm : Form
+    public partial class MainMenu : Form
     {
-        public entryForm()
+        public MainMenu()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void MainMenu_Load(object sender, EventArgs e)
         {
 
         }
